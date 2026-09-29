@@ -18,7 +18,7 @@
 #define LOWER 1
 #define MAGIC 2
 #define FACTORY_TEST 3
-
+//#tämä on testi muutos
 / {
     behaviors {
         // For the "layer" key, it'd nice to be able to use it as either a shift or a toggle.
