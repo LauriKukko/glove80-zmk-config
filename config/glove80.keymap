@@ -47,7 +47,7 @@
         };
 */
 
-/ {
+/*/ {
     underglow-layer {
         compatible  = "zmk,underglow-layer";
 
@@ -87,7 +87,7 @@
             layer-id = <LAYER_Magic>;
         };
     };
-};
+};*/
 
 
 /* Glove80 system behavior & macros */
