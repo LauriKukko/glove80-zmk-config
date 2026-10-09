@@ -70,10 +70,6 @@
 
 /* Custom Device-tree */
 
-&rgb_underglow {
-    status = "okay";
-};
-
 / {
     behaviors {
         /* Base: RGB off */
