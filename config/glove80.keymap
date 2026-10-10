@@ -426,7 +426,7 @@ behaviors {
   };
 
   // Mod tap time
-  mt: mt {
+  mt: my_mt {
     compatible = "zmk,behavior-hold-tap";
     #binding-cells = <2>;
     flavor = "balanced";
@@ -474,8 +474,8 @@ behaviors {
         &kp ESC                  &kp N1               &kp N2    &kp N3    &kp N4  &kp N5                                                                                                                                          &kp N6    &kp N7        &kp N8      &kp N9        &kp N0         &kp MINUS
         &kp TAB                   &kp Q                &kp W     &kp E     &kp R   &kp T                                                                                                                                           &kp Y     &kp U         &kp I       &kp O         &kp P          &kp BSLH
         &lower                    &kp A                &kp S     &kp D     &kp F   &kp G                                                                                                                                           &kp H     &kp J         &kp K       &kp L      &kp SEMI           &kp SQT
- &mt LSHFT LS(N8)                 &kp Z    &mt LC(X) X  &mt LC(C) C  &mt LC(V) V  &kp B  &mt NON_US_BSLH LS(MINUS)  &mt LS(N0) LS(N1)  &mt RA(N7) RA(N2)  &mt RA(N0) RA(NON_US_BSLH)  &mt RA(MINUS) LS(N7)  &kp LS(NON_US_BSLH)   &kp N     &kp M     &kp COMMA     &kp DOT      &kp FSLH  &mt RSHFT LS(N9)
-        &kp LCTRL  &mt LS(EQUAL) RA(RBKT)  &mt RA(RBKT) LS(N2)  &kp LGUI  &kp LALT                          &kp SPACE            &kp RET    &lower_rgb             &magic_rgb               &kp RET            &kp SPACE          &kp RALT  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP         &kp RCTRL
+ &my_mt LSHFT LS(N8)                 &kp Z    &my_mt LC(X) X  &my_mt LC(C) C  &my_mt LC(V) V  &kp B  &my_mt NON_US_BSLH LS(MINUS)  &my_mt LS(N0) LS(N1)  &my_mt RA(N7) RA(N2)  &my_mt RA(N0) RA(NON_US_BSLH)  &my_mt RA(MINUS) LS(N7)  &kp LS(NON_US_BSLH)   &kp N     &kp M     &kp COMMA     &kp DOT      &kp FSLH  &my_mt RSHFT LS(N9)
+        &kp LCTRL  &my_mt LS(EQUAL) RA(RBKT)  &my_mt RA(RBKT) LS(N2)  &kp LGUI  &kp LALT                          &kp SPACE            &kp RET    &lower_rgb             &magic_rgb               &kp RET            &kp SPACE          &kp RALT  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP         &kp RCTRL
             >;
         };
 
@@ -485,7 +485,7 @@ behaviors {
                &trans         &none              &none           &none             &none           &kp HOME                                                                               &kp KP_NUM           &none           &none            &none    &none            &trans
                &trans         &none          &mkp RCLK    &mmv MOVE_UP         &mkp LCLK   &msc MOVE_Y(40)                                                                                    &none       &kp PG_UP    &kp UP_ARROW        &kp PG_DN    &none          &kp LBKT
                &trans         &none     &mmv MOVE_LEFT       &mkp MCLK   &mmv MOVE_RIGHT  &msc MOVE_Y(-40)                                                                                 &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp INS             &none
-     &mt LSHFT LS(N8)     &kp K_APP  &msc MOVE_X(-40)  &mmv MOVE_DOWN  &msc MOVE_X(40)           &mkp MB4    &trans  &kp RA(N8)          &trans           &trans  &kp RA(N9)    &trans     &kp END           &none          &trans           &trans   &trans  &mt RSHFT LS(N9)
+     &my_mt LSHFT LS(N8)     &kp K_APP  &msc MOVE_X(-40)  &mmv MOVE_DOWN  &msc MOVE_X(40)           &mkp MB4    &trans  &kp RA(N8)          &trans           &trans  &kp RA(N9)    &trans     &kp END           &none          &trans           &trans   &trans  &mt RSHFT LS(N9)
  &magic LAYER_Magic 0      &kp CAPS              &none           &none             &none                     &kp BSPC     &kp DEL  &base_rgb  &magic_rgb     &kp DEL  &kp BSPC                   &kp COMMA          &trans           &trans   &trans            &trans
             >;
         };
