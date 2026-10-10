@@ -426,7 +426,7 @@ behaviors {
   };
 
   // Mod tap time
-  mt: my_mt {
+  my_mt: my_mt {
     compatible = "zmk,behavior-hold-tap";
     #binding-cells = <2>;
     flavor = "balanced";
